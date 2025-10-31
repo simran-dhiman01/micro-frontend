@@ -15,8 +15,8 @@ export default defineConfig({
         "./design-system": "./src/design-system/index.js",    //expose shared components so that chat app and email app can use them.
       },
       remotes: {
-        chat: 'http://localhost:4173/assets/remoteEntry.js',
-        email: 'http://localhost:4174/assets/remoteEntry.js'
+        chat: 'https://micro-frontend-pi.vercel.app/assets/remoteEntry.js',
+        email: 'https://email-app-mfe.vercel.app/assets/remoteEntry.js'
       },
       shared: ['react', 'react-dom'],
     })
