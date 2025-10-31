@@ -12,7 +12,7 @@ export default defineConfig({
       name: 'email',
       filename: 'remoteEntry.js',
       remotes: {
-        hostApp: "http://localhost:4175/assets/remoteEntry.js", // host app port
+        hostApp: "https://host-app-sepia.vercel.app/assets/remoteEntry.js", // host app port
       },
       exposes: {
         './EmailApp': './src/App.jsx'
@@ -20,7 +20,6 @@ export default defineConfig({
       shared: ['react', 'react-dom'],
     })
   ],
-  //server: { port: 3000 },
   build: { target: 'esnext' },
 
 })
